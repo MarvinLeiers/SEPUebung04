@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sepuebung04.MainController">
+   <children>
+      <TextField fx:id="textField" alignment="TOP_LEFT" layoutX="36.0" layoutY="31.0" prefHeight="25.0" prefWidth="528.0" />
+      <Button fx:id="btnClear" layoutX="512.0" layoutY="65.0" mnemonicParsing="false" onAction="#clear" text="Leeren" />
+      <PieChart fx:id="pieChart" layoutX="14.0" layoutY="102.0" prefHeight="269.0" prefWidth="282.0" />
+      <AreaChart fx:id="areaChart" layoutX="313.0" layoutY="128.0" prefHeight="218.0" prefWidth="273.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>
